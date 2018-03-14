@@ -10,7 +10,7 @@
         <ul class="site-navigation">
             <li><a href="info.html">Информация</a></li>
             <li><a href="gallery.html">Фото и видео</a></li>
-            <li class="logo"><img src="img/index-logo.svg" width="138" height="70" alt="Логотип Седона"></li>
+            <li><a class="logo" href="index.html"><img src="img/index-logo.svg" width="138" height="70" alt="Логотип Седона"></a></li>
             <li><a href="map.html">Карта штата</a></li>
             <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
@@ -22,7 +22,33 @@
     <h1 class="visually-hidden">Гостиницы</h1>
 
     <section class="form">
-        <form action=""></form>
+        <form class="form-sort" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset>
+                <legend>Инфраструктура:</legend>
+                <p><input type="checkbox">бассейн</p>
+                <p><input type="checkbox">парковка</p>
+                <p><input type="checkbox">wi-fi</p>
+            </fieldset> 
+
+            <fieldset>
+                <legend>Тип жилья:</legend>
+                <p><input type="checkbox">гостиница</p>
+                <p><input type="checkbox">мотель</p>
+                <p><input type="checkbox">апартаменты</p>
+            </fieldset> 
+
+            <fieldset>
+                <legend>Стоимость в сутки(р):</legend>
+                <output name="sum">От</output>
+                <output name="sum">До</output>
+                <!--Как сделать два ползунка-->
+                <input type="range" min="0">  
+            </fieldset> 
+            
+            <!--Ссылка?-->
+            <button class="range-button">Показать</button>
+                
+        </form>
     </section>
 
     <div class="sort">
@@ -30,13 +56,13 @@
         <p>Сортировка:</p>
         <ul>
             <li>
-                <button>По цене</button>
+                <button class="sort-button">По цене</button>
             </li>
             <li>
-                <button>По типу</button>
+                <button class="sort-button">По типу</button>
             </li>
             <li>
-                <button>По рейтингу</button>
+                <button class="sort-button">По рейтингу</button>
             </li>
         </ul>
     </div>

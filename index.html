@@ -11,7 +11,7 @@
         <ul class="site-navigation">
             <li><a href="info.html">Информация</a></li>
             <li><a href="gallery.html">Фото и видео</a></li>
-            <li class="logo"><img src="img/index-logo.svg" width="138" height="70" alt="Логотип Седона"></li>
+            <li><a class="logo" href="index.html"><img src="img/index-logo.svg" width="138" height="70" alt="Логотип Седона"></a></li>
             <li><a href="map.html">Карта штата</a></li>
             <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
@@ -92,12 +92,29 @@
     </section>
 
 
-    <section class="appointment">
+    <section class="search">
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <form action="">
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
             <h2>Поиск гостиницы в Седоне</h2>
-            <!-- Здесь будет форма -->
+            <p class="search-item">
+                <label for="check-in-date">Дата заезда:</label>
+                <input id="check-in-date" type="date" name="check-in-date" value="" placeholder="24 апреля 2017">
+            </p>
+            <p class="search-item">
+                <label for="check-out-date">Дата выезда:</label>
+                <input id="check-out-date" type="date" name="check-out-date" value="" placeholder="4 июля 2017">
+            </p>
+            <p class="search-item">
+                <label for="adults">Взрослые:</label>
+                <input id="adults" type="number" name="adults" value="2" min="1" step="1">
+            </p>
+            <p class="search-item">
+                <label for="children">Дети:</label>
+                <input id="children" type="number" name="children" value="0" min="0">
+            </p>
+            <!--Ссылка??-->
+            <button class="button" type="submit">Найти</button> 
         </form>
     </section>
 </main>
@@ -129,7 +146,10 @@
 
 <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <span class="modal-close">x</span>
+    <p>
+        <img src="img/map.jpg" width="1280" height="747" alt="">
+      </p>
+    <button class="modal-close" type="button">Закрыть</button>
 </section>
 
 </body>
