@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-image: url("img/background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+	font-size: 21px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #766357;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #604e43;
+}
+
+.button:active {
+  background-color: #503e33;
+}
+
+.button-blue {
+	font: inherit;
+
+	text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
+  border: none;
+}
+
+.button-blue:hover,
+.button-blue:focus {
+	background-color: #669ec0;
+}
+
+.button-blue:active {
+	background-color: #5496bd;
+}
+
+.navigation {
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.site-navigation{
+  list-style: none;
+}
+
+.site-navigation a{
+  color: #000000;
+}
+
+.font {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+small {
+	font-size: 14px;
+	font-weight: 400;
+  color: #333333;
+}
+
+.advantages-row {
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.advantages-row h3 {
+	color: #ffffff;
+}
+
+.advantages-list {
+	list-style: none;
+}
+
+.advantages-row-row {
+	list-style: none;
+	background-color: #eeeeee;
+}
+
+big {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 36px;
+}
+.search p {
+	line-height: 24px;
+}
+
+.search-item input{
+	font: inherit;
+	color: #000000;
+
+	background-color: #f2f2f2;
+	border: 2px solid #f2f2f2;
+}
+
+
+.search-item input:hover {
+	background-color: #ebebeb;
+	border: 2px solid #ebebeb;
+}
+
+.search-item input:focus {
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5;
+}
+
+.footer {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.footer a{
+	color: #000000;
+	font-weight: 700;
+	font-size: 21px;
+  line-height: 26px;
+}
+
+.footer-social {
+  list-style: none;
+ }
+
+ .footer-copyright {
+ 	color: #000000;
+	font-size: 14px;
+  line-height: 26px;
+ }
