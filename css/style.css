@@ -26,6 +26,24 @@ h3 {
 	color: #000000;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .button {
   font: inherit;
 
@@ -68,27 +86,61 @@ h3 {
 	background-color: #5496bd;
 }
 
+.header {
+  margin-bottom: 60px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
 .navigation {
   line-height: 26px;
   font-weight: 700;
   color: #000000;
 
   background-color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200; 
+
 }
 
 .site-navigation{
   list-style: none;
+
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+
+  justify-content: space-around;
 }
 
 .site-navigation a{
   color: #000000;
+
+  width: 138; 
+  height: 70;
 }
+
 
 .font {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+
+  margin-bottom: 60px;
+  list-style: none;
+ /* width: 495px;
+  justify-content: center;
+  align-content: center; */
 }
 
 small {
@@ -101,22 +153,54 @@ small {
   color: #ffffff;
 
   background-color: #81b3d2;
+
+  display: flex;
 }
 
+.advantages-row .text{
+	width: 290px;
+	padding-top: 45px;
+	padding-bottom: 60px;
+	padding-right: 55px;
+	padding-left: 55px;
+}
 .advantages-row h3 {
 	color: #ffffff;
 }
 
 .advantages-list {
+	display: flex;
 	list-style: none;
 }
 
+.advantages-item {
+	width: 400px;
+	padding-top: 60px;
+	padding-bottom: 85px;
+	padding-left: 70px;
+	padding-right: 70px;
+}
 .advantages-row-row {
-	list-style: none;
-	background-color: #eeeeee;
+	display: flex;
 }
 
-big {
+.advantages-row-item {
+	background-color: #eeeeee;
+	
+	list-style: none;
+	width: 400px;
+	padding-top: 45px;
+	padding-bottom: 60px;
+	padding-right: 90px;
+	padding-left: 90px;
+
+} 
+
+.search {
+
+}
+
+.search b {
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 36px;
@@ -150,28 +234,65 @@ big {
   background-color: #ffffff;
 }
 
+.footer .container {
+	display: flex;
+
+}
+
 .footer a{
 	color: #000000;
 	font-weight: 700;
 	font-size: 21px;
   line-height: 26px;
+
+  margin: auto;
+  width: 145px;
 }
 
 .footer-social {
   list-style: none;
+  width: 150px;
+  margin: auto;
  }
 
  .footer-copyright {
  	color: #000000;
 	font-size: 14px;
   line-height: 26px;
+
+  margin: auto;
+  width: 200px;
  }
 
  .form {
  	color: #ffffff;
 
  	background-color: #566874;
+
+ 	display: flex;
+  flex-direction: row;
+ 	width: 1060px;
+ 	padding-top: 25px;
+	padding-bottom: 30px;
+	padding-right: 73px;
+	padding-left: 73px;
  }
+
+ .infrastructure {
+ 	display: flex;
+   width: 200px;
+ }
+
+.housing {
+	display: flex;
+	width: 200px;
+}
+
+.cost {
+	display: flex;
+	width: 330px;
+	margin-left: auto;
+}
 
  .form fieldset {
   border: none;
@@ -186,6 +307,10 @@ big {
 .sort{
 	font-size: 12px;
   line-height: 18px;
+
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .sort big{
@@ -196,6 +321,24 @@ big {
 
 .sort-button {
 
+}
+
+.hotels {
+  margin-bottom: 73px;
+  margin-right: 73px;
+}
+
+.hotels-item {
+	display: flex;
+}
+
+.hotels-content {
+	width: 265px;
+}
+
+.hotels-rating {
+	width: 111px;
+	margin-left: auto;
 }
 
 .hotels-content h3 {
@@ -219,6 +362,8 @@ big {
 
 .sort ul{
 	list-style: none;
+
+	display: flex;
 }
 
 .hotels ul{
@@ -236,6 +381,7 @@ big {
 	color: #000000;
   text-decoration: none;
   border-bottom:1px dashed #81b3d2;
+  opacity: 30%;
 }
 
 .sort a:hover{
